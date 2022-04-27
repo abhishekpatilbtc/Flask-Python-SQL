@@ -68,7 +68,7 @@ Cancel changes
             iv.) We dockertized it if need to be migrated to cloud which will allow us to scale our Micro-service
             
 
-    c.) What concerns did we data and the project requirements?
+    c.) What concerns did we data and the project requirements? How does your design solve them?
     
             i.) The data had mixed dtype and null values thus when I imported csv. I workaround this by storing null values. 
             
@@ -77,3 +77,5 @@ Cancel changes
             iii.) The file size was larged 2 GB relatively performance intensive thus I stored it locally in SQLite. 
             
             iv.) I was unclear about On-Premise vs Cloud so deployed for deployment. In the future, flask and sqlite can be easily dockertized if needed and migrated to cloud.  This will allow us to scale our Micro-service 
+            v.) I was unclear about if values for API were going to be based in URL or body. I designed to it to be URL params as common practice for GET requests.
+            vi.) The design is fairly simply. The dataHandler.py will store data in the DB while app.py while create web server and make apis available. When API request is made, the function will be referred and it will create DB connection. We used simple SQL queries to pass in URL params as where condition and request data from the database.
