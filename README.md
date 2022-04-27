@@ -10,6 +10,7 @@ Cancel changes
    Server URL: The server will be locally hosted at http://127.0.0.1:5000
 
 2. Resources used
+
    a) Python 3.6.10
    
    b) Flask 2.0.3
