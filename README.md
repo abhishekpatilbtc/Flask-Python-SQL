@@ -7,7 +7,7 @@ Cancel changes
    SQLite has been used as datastore for data imported using CSV as large as 2GB. All REST services are in app.py
    REST API calls will return JSON. 
    
-   Server URL: The server will be locally hosted at http://127.0.0.1:5000
+   Server URL: The server will be locally hosted at http://127.0.0.1:5000 (the information will be available in terminal output as well)
 
 2. Resources used
 
