@@ -17,7 +17,9 @@ Cancel changes
    c) SQLite 3.31.1
    
 3. Files:
+
    a) app.py - It contains APIs
+   
         i. Outputs all operators associated with given company - api/company/operators?companyName=
         
         ii. Outputs all companies associated with given operator - api/operator/companies?operatorName=
@@ -33,19 +35,18 @@ Cancel changes
 
 4. How to run application?
 
-   a) Create datastore using CSV by running command in the root folder using terminal ==> python dataHandler.py <filename.csv>
 
-   b) Ensure dependencies are installed. Refer to supported versions in requirements.txt
-   
-   c) Using terminal, start  web server by running command in the root folder using terminal  ==> python -m flask run
+      a) Create datastore using CSV by running command in the root folder using terminal ==> python dataHandler.py <filename.csv>
+
+      b) Ensure dependencies are installed. Refer to supported versions in requirements.txt
+
+      c) Using terminal, start  web server by running command in the root folder using terminal  ==> python -m flask run
   
 
       
 5. Design Discussions
     a.) Why Python Flask?
-    
-          Below are pros to consider Flask for such projects:
-          
+        
             i.) Flask allowed to create Web server which where we can host backend REST API server. Documentation, community support and developer tools
             
             ii.) The Flask is simple, enables faster deployment and has other integrations as well.
@@ -55,6 +56,7 @@ Cancel changes
             iv.) Scalability, Simplicity and useful Python libraries
             
     b.) Why SQLite?
+    
             i.)  With SQLite we can store large sized csv locally with easy.
             
             ii.) Generally speaking, 100K hits/day should work fine with SQLite. 
