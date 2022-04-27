@@ -45,7 +45,7 @@ Cancel changes
   
 
       
-5. Design Discussions
+5. Deployment and Architectural Discussions
 
     a.) Why Python Flask?
         
@@ -67,3 +67,13 @@ Cancel changes
             
             iv.) We dockertized it if need to be migrated to cloud which will allow us to scale our Micro-service
             
+
+    c.) What concerns did we data and the project requirements?
+    
+            i.) The data had mixed dtype and null values thus when I imported csv. I workaround this by storing null values. 
+            
+            ii.) The delimiter was seperated by tab so I had to specify that to fix errors during csv import. I also turned of error for bad lines, if any.
+            
+            iii.) The file size was larged 2 GB relatively performance intensive thus I stored it locally in SQLite. 
+            
+            iv.) I was unclear about On-Premise vs Cloud so deployed for deployment. In the future, flask and sqlite can be easily dockertized if needed and migrated to cloud.  This will allow us to scale our Micro-service 
